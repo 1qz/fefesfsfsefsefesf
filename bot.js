@@ -2161,4 +2161,4 @@ client.on('message', msg => {
 });
 
 
-client.login('king11x');
+client.login(process.env.BOT_TOKEN);
