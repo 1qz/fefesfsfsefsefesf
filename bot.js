@@ -2224,6 +2224,9 @@ client.on('message', message => {
       message.channel.sendEmbed(embed);
     }
 });
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","مواطن"));
+    });
 
 
 client.login(process.env.BOT_TOKEN);
