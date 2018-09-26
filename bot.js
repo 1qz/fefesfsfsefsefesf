@@ -2191,6 +2191,18 @@ client.on('message', message => {
       message.author.sendEmbed(Embed11)
     }
 });
+client.on("guildMemberAdd", function(member) {
+    const wc = member.guild.channels.find("name", "general")
+        const embed = new Discord.RichEmbed()
+        .setColor('B90C0C')
+        .setAuthor(member.user.tag, member.user.avatarURL)
+ .setDescription('***يا مرحبا وسهلاً بضيف لفانا، يزهي بك الأدب العربي وينثر لك أزهار يسقيك من نبع المشاعر وفانا، لين الهلا تثمر على غصونك أطيار. ***')
+.setThumbnail(member.avatarURL)
+  .setImage('https://cdn.pg.sa/i2AboP4evX.png')
+        .setTimestamp()
+        return wc.sendEmbed(embed);
+        
+});
 
 
 client.login(process.env.BOT_TOKEN);
