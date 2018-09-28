@@ -2215,6 +2215,17 @@ client.on('message', message => {
 client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name","مواطن"));
     });
+const developers = ["292530030410596353","292530030410596353",""]
+const adminprefixe = "-";
+client.on('message', message => {
+    var argresult = message.content.split(` `).slice(1).join(' ');
+      if (!developers.includes(message.author.id)) return;
+      
+
+     if (message.content === (adminprefix + "leave")) {
+    message.guild.leave();       
+}
+});
 
 
 client.login(process.env.BOT_TOKEN);
