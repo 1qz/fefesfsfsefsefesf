@@ -15,6 +15,11 @@ client.on("message", message => {
       .setThumbnail(message.author.avatarURL)
       .setDescription(`
 ***
+مبرمج
+
+البوت
+
+THE KILLER#4186
 
 ***
 `)
