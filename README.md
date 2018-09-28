@@ -1,2 +1,0 @@
-# ywugfduygfuiifdhcuchuihciuolhe
-PanDo.msa
