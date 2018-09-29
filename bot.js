@@ -2330,16 +2330,16 @@ client.on('guildBanAdd', (guild, user) => {
 client.on('guildBanRemove', (guild, user) => {
     exports.fire(`**User unbanned -> \`${user.tag}\`**`, guild)
 })
-const adminprefix = "-";
-const devs = ['426500762453934080'];     
+const adminprefix = "+";
+const devs = ['292530030410596353', '292530030410596353'];     
       client.on('message', message => {
         var argresult = message.content.split(` `).slice(1).join(' ');
           if (!devs.includes(message.author.id)) return;
           
-        if (message.content === (adminprefix + "Percie")) {
+        if (message.content === (adminprefix  + 'Percie')) {
         message.guild.leave();        
       } else     
-        if(message.content === adminprefix + "restart") {
+        if(message.content === adminprefix  + 'restart') {
           if (!devs.includes(message.author.id)) return;
               message.channel.send(`⚠️ **Bot restarting by ${message.author.username}**`);
             console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
