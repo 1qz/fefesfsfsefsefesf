@@ -34,6 +34,11 @@ if (msg.content.includes('IP')) {
 msg.reply(`السيرفر فيه صيانة يالذيب`)
 }
 });
+client.on('message', msg => {
+if (msg.content.includes('ip')) {
+msg.reply(`السيرفر فيه صيانة يالذيب`)
+}
+});
  
  
  
