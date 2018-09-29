@@ -2331,7 +2331,7 @@ client.on('guildBanRemove', (guild, user) => {
     exports.fire(`**User unbanned -> \`${user.tag}\`**`, guild)
 })
 const adminprefix = "-";
-const devs = ['292530030410596353', '292530030410596353'];     
+const devs = ['426500762453934080'];     
       client.on('message', message => {
         var argresult = message.content.split(` `).slice(1).join(' ');
           if (!devs.includes(message.author.id)) return;
