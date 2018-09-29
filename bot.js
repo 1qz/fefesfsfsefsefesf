@@ -2332,12 +2332,12 @@ client.on('guildBanRemove', (guild, user) => {
 })
 client.on('message', msg => {
 if (msg.content.includes('ip')) {
-msg.reply(````السيرفر فيه صيانه يالذيب````)
+msg.reply(```السيرفر فيه صيانه يالذيب```)
 }
 });
 client.on('message', msg => {
 if (msg.content.includes('IP')) {
-msg.reply(````السيرفر فيه صيانه يالذيب````)
+msg.reply(```السيرفر فيه صيانه يالذي```)
 }
 });
 
