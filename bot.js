@@ -2330,5 +2330,15 @@ client.on('guildBanAdd', (guild, user) => {
 client.on('guildBanRemove', (guild, user) => {
     exports.fire(`**User unbanned -> \`${user.tag}\`**`, guild)
 })
+client.on('message', msg => {
+if (msg.content.includes('ip')) {
+msg.reply(````السيرفر فيه صيانه يالذيب````)
+}
+});
+client.on('message', msg => {
+if (msg.content.includes('IP')) {
+msg.reply(````السيرفر فيه صيانه يالذيب````)
+}
+});
 
 client.login(process.env.BOT_TOKEN);
