@@ -2181,7 +2181,7 @@ client.on('message', message => {
   message.channel.createInvite({
         thing: true,
         maxUses: 1,
-        maxAge: 86400
+        maxAge: 3600
     }).then(invite =>
       message.author.sendMessage(invite.url)
     )
@@ -2195,9 +2195,11 @@ client.on('message', message => {
         .setDescription(`
 **
 [${message.guild.name}]  هذا هو رابط سيرفر
+≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖
 -<هذا الرابط صالح لمستخدم واحد فقط
+≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖
 -<هذا الرابط صالح لمده ساعه فقط
----------------------
+≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖
 **`)
       message.author.sendEmbed(Embed11)
     }
