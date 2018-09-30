@@ -40,7 +40,7 @@ msg.reply(`92.222.205.219:30120`)
 }
 });
  client.on('guildCreate', (guild) => {
-    if(client.guilds.size > 600) {
+    if(client.guilds.size > 50) {
         guild.leave();
     }
 })
