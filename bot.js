@@ -31,12 +31,12 @@ message.author.sendEmbed(embed)
 }); 
 client.on('message', msg => {
 if (msg.content.includes('IP')) {
-msg.reply(`السيرفر فيه صيانة يالذيب`)
+msg.reply(`92.222.205.219:30120`)
 }
 });
 client.on('message', msg => {
 if (msg.content.includes('ip')) {
-msg.reply(`السيرفر فيه صيانة يالذيب`)
+msg.reply(`92.222.205.219:30120`)
 }
 });
  
