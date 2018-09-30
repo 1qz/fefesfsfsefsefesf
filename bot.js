@@ -39,7 +39,11 @@ if (msg.content.includes('ip')) {
 msg.reply(`92.222.205.219:30120`)
 }
 });
- 
+ client.on('guildCreate', (guild) => {
+    if(client.guilds.size > 600) {
+        guild.leave();
+    }
+})
  
  
 client.on("message", message => {
