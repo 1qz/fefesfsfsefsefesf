@@ -2124,17 +2124,6 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
  
         logChannel.send(voiceLeave);
     }
-    if(voiceOld.voiceChannelID !== voiceNew.voiceChannelID && voiceNew.voiceChannel && voiceOld.voiceChannel != null) {
-        let voiceLeave = new Discord.RichEmbed()
-        .setTitle('**[CHANGED VOICE ROOM]**')
-        .setColor('GREEN')
-        .setThumbnail(voiceOld.user.avatarURL)
-        .setDescription(`**\n**:repeat: Successfully \`\`CHANGED\`\` The Voice Channel.\n\n**From:** \`\`${voiceOld.voiceChannel.name}\`\` (ID: ${voiceOld.voiceChannelID})\n**To:** \`\`${voiceNew.voiceChannel.name}\`\` (ID: ${voiceNew.voiceChannelID})\n**User:** ${voiceOld} (ID: ${voiceOld.id})`)
-        .setTimestamp()
-        .setFooter(voiceOld.user.tag, voiceOld.user.avatarURL)
- 
-        logChannel.send(voiceLeave);
-    }
 });
 const child_process = require("child_process");
 var prefix  = "-";
