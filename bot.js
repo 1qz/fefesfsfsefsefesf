@@ -2101,7 +2101,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
  
             logChannel.send(serverUndeafv);
         }
-});
+})
 const child_process = require("child_process");
 var prefix  = "-";
 client.on('message', message => {
