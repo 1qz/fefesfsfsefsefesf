@@ -1683,46 +1683,4 @@ client.on('message', message => {
 client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name","مواطن"));
     });
-client.on('guildMemberUpdate', (old, nw) => {
-    let txt
-    if (old.roles.size !== nw.roles.size) {
-        if (old.roles.size > nw.roles.size) {
-            //Taken
-            let dif = old.roles.filter(r => !nw.roles.has(r.id)).first()
-            txt = `**${nw.user.tag} | Role taken -> \`${dif.name}\`**`
-        } else if (old.roles.size < nw.roles.size) {
-            //Given
-            let dif = nw.roles.filter(r => !old.roles.has(r.id)).first()
-            txt = `**${nw.user.tag} | Role given -> \`${dif.name}\`**`
-        }
-    } else if (old.nickname !== nw.nickname) {
-        txt = `**${nw.user.tag} | Changed their nickname to -> \`${nw.nickname}\`**`
-    } else return
-    exports.fire(txt, nw.guild)
-})
-
-client.on('roleCreate', (role) => {
-    exports.fire("**New role created**", role.guild)
-})
-
-client.on('roleDelete', (role) => {
-    exports.fire("**Role deleted -> `" + role.name + "`**", role.guild)
-})
-
-client.on('roleUpdate', (old, nw) => {
-    let txt
-    if (old.name !== nw.name) {
-        txt = `**${old.name} | Role name updated to -> \`${nw.name}\`**`
-    } else return
-    exports.fire(txt, nw.guild)
-})
-
-client.on('guildBanAdd', (guild, user) => {
-    exports.fire(`**User banned -> \`${user.tag}\`**`, guild)
-})
-
-client.on('guildBanRemove', (guild, user) => {
-    exports.fire(`**User unbanned -> \`${user.tag}\`**`, guild)
-})
-
 client.login(process.env.BOT_TOKEN);
