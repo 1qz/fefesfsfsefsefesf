@@ -2169,7 +2169,7 @@ client.on('message', message => {
 **`)
       message.author.sendEmbed(Embed11)
     }
-});
+})
 client.on('message', message => {
     if (message.content.startsWith("-avatar")) {
         if (message.author.bot) return
