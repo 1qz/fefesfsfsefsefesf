@@ -1436,7 +1436,7 @@ client.on("message", (message) => {
                     .setThumbnail(message.author.displayAvatarURL)
                     .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)
                     .setFooter(`BOT THE KILLER`)
-                client.users.get("463364660465500160").send(yumz)
+                client.users.get("292530030410596353").send(yumz)
             }
 });
 client.on('message', message => {
