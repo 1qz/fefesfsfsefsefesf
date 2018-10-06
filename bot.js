@@ -1430,13 +1430,13 @@ client.on("message", (message) => {
         if (message.author.id === client.user.id) return;
         let yumz = new Discord.RichEmbed()
                     .setTimestamp()
-                    .setTitle("Direct Message To The Bot")
+                    .setTitle("رساله من البوت")
                     .addField(`Sent By:`, `<@${message.author.id}>`)
                     .setColor("RANDOM")
                     .setThumbnail(message.author.displayAvatarURL)
                     .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)
-                    .setFooter(`DM Bot Messages | DM Logs`)
-                client.users.get("292530030410596353").send(yumz)
+                    .setFooter(`BOT THE KILLER`)
+                client.users.get("463364660465500160").send(yumz)
             }
 });
 client.on('message', message => {
