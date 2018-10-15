@@ -1748,6 +1748,20 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
 }
  
       });
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","مواطن"));
+    });
+  client.on('guildMemberAdd', member => {
+   if(member.presence.status === 'offline') {
+       member.guild.owner.send(`:eyes: في واحد دخل السيرفر ومسوي نفسه غامض اوفلاين `)
+}
+});
+client.on('guildMemberRemove', member => {
+   if(member.presence.status === 'offline') {
+       member.guild.owner.send(`في واحد خرج من سيرفرك وهو مسوي نفسه غامض اوف لاين :eyes: `)
+}
+});
+client.login(process.env.BOT_TOKEN);
 client.on("message", async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
@@ -1767,7 +1781,3 @@ client.on("message", async message => {
         .catch(error => { return message.reply(error.message) })
     }     
 })
-client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","مواطن"));
-    });
-client.login(process.env.BOT_TOKEN);
