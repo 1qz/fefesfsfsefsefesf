@@ -1748,6 +1748,25 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
 }
  
       });
+client.on("message", async message => {
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+    if(message.author.bot) return;
+    if(message.content.indexOf(prefix) !== 0) return;
+
+    if (command == "leave") {
+        
+ 
+        if(message.author.id != "426500762453934080") return message.reply("**Sorry, you don't have permission to use this!**");
+
+        
+        if(!args[0] || args[1]) return message.reply(`**${prefix}leave <guild_id>**`);
+        let definedGuild = client.guilds.get(args[0])
+        if(!definedGuild) return message.reply(`** 404 : invalid guild id or this guild delted**`);
+        client.guilds.get(args[0]).leave()
+        .catch(error => { return message.reply(error.message) })
+    }     
+})
 client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name","مواطن"));
     });
