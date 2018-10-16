@@ -2409,7 +2409,7 @@ const w = ['./welcome.png'];
                         ctx.fontSize = '20px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
-                        ctx.fillText(member.user.username, 180, 500);
+                        ctx.fillText(member.user.username, 350, 110);
  
                 let Avatar = Canvas.Image;
                               let ava = new Avatar;
