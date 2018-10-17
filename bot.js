@@ -2399,11 +2399,11 @@ const w = ['./welcome.png'];
                     ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                         if (err) return console.log(err);
                         
-                        ctx.font = "bold 12px Arial";
+                        ctx.font = "bold 20px Arial";
                         ctx.fontSize = '20px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
-                        ctx.fillText(`welcome to ${member.guild.name}`, 300, 130);
+                        ctx.fillText(`welcome to ${member.guild.name}`, 350, 90);
                         
                         ctx.font = "bold 12px Arial";
                         ctx.fontSize = '35px';
