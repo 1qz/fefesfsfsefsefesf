@@ -2415,7 +2415,7 @@ const w = ['./welcome.png'];
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                              ctx.arc(77, 101, 100, 0, Math.PI*2);
+                              ctx.arc(77, 45, 100, 0, Math.PI*2);
                               ctx.stroke();
                                  ctx.clip();
                                  ctx.drawImage(ava, 23, 45, 251, 251);  
