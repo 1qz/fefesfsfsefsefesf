@@ -2403,13 +2403,13 @@ const w = ['./welcome.png'];
                         ctx.fontSize = '20px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
-                        ctx.fillText(`welcome to ${member.guild.name}`, 350, 90);
+                        ctx.fillText(`welcome to ${member.guild.name}`, 300, 10);
                         
                         ctx.font = "bold 12px Arial";
                         ctx.fontSize = '35px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
-                        ctx.fillText(member.user.username, 350, 80);
+                        ctx.fillText(member.user.username, 250, 40);
  
                 let Avatar = Canvas.Image;
                               let ava = new Avatar;
