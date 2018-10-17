@@ -2403,9 +2403,9 @@ const w = ['./welcome.png'];
                         ctx.fontSize = '20px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
-                        ctx.fillText(`welcome to ${member.guild.name}`, 195, 150);
+                        ctx.fillText(`welcome to ${member.guild.name}`, 490, 200);
                         
-                        ctx.font = "bold 25px Arial";
+                        ctx.font = "bold 50px Arial";
                         ctx.fontSize = '35px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
@@ -2415,10 +2415,10 @@ const w = ['./welcome.png'];
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                              ctx.arc(77, 101, 62, 0, Math.PI*2);
+                              ctx.arc(251, 251, 23, 45, Math.PI*2);
                               ctx.stroke();
                                  ctx.clip();
-                                 ctx.drawImage(ava, 23, 45, 251, 251);  
+                                 ctx.drawImage(ava, 13, 38, 128, 126);  
                           
                 
                              
