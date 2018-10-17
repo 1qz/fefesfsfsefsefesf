@@ -2415,10 +2415,10 @@ const w = ['./welcome.png'];
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                              ctx.arc(77, 101, 251, 0, Math.PI*2);
+                              ctx.arc(77, 101, 43, 0, Math.PI*2);
                               ctx.stroke();
                                  ctx.clip();
-                                 ctx.drawImage(ava, 20, 43, 128, 251);  
+                                 ctx.drawImage(ava, 20, 43, 251, 251);  
                           
                 
                              
