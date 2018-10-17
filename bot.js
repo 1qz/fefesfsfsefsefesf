@@ -2382,14 +2382,14 @@ client.on('guildMemberAdd', member => {
 const w = ['./welcome.png'];
 
          let Image = Canvas.Image,
-            canvas = new Canvas(400, 200),
+            canvas = new Canvas(800, 300),
             ctx = canvas.getContext('2d');
         fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
             if (err) return console.log(err);
             let BG = Canvas.Image;
             let ground = new Image;
             ground.src = Background;
-            ctx.drawImage(ground, 0, 0, 400, 200);
+            ctx.drawImage(ground, 0, 0, 800, 300);
              
           
 
@@ -2409,7 +2409,7 @@ const w = ['./welcome.png'];
                         ctx.fontSize = '35px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
-                        ctx.fillText(member.user.username, 200, 110);
+                        ctx.fillText(member.user.username, 220, 110);
  
                 let Avatar = Canvas.Image;
                               let ava = new Avatar;
