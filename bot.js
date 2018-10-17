@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const Canvas = require('canvas');
+const canvas = require('canvas');
 const jimp = require('jimp');
 const client = new Discord.Client();
 
