@@ -2399,11 +2399,11 @@ const w = ['./welcome.png'];
                     ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                         if (err) return console.log(err);
                         
-                        ctx.font = "bold 10px Arial";
+                        ctx.font = "bold 20px Arial";
                         ctx.fontSize = '20px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
-                        ctx.fillText(`welcome to ${member.guild.name}`, 490, 200);
+                        ctx.fillText(`welcome to ${member.guild.name}`, 400, 220);
                         
                         ctx.font = "bold 50px Arial";
                         ctx.fontSize = '35px';
@@ -2415,7 +2415,7 @@ const w = ['./welcome.png'];
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                              ctx.arc(251, 251, 23, 45, Math.PI*2);
+                              ctx.arc(23, 45, 251, 251, Math.PI*2);
                               ctx.stroke();
                                  ctx.clip();
                                  ctx.drawImage(ava, 13, 38, 128, 126);  
