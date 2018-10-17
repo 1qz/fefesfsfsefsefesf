@@ -2418,7 +2418,7 @@ const w = ['./welcome.png'];
                               ctx.arc(77, 101, 62, 0, Math.PI*2);
                               ctx.stroke();
                                  ctx.clip();
-                                 ctx.drawImage(ava, 13, 38, 251, 126);  
+                                 ctx.drawImage(ava, 13, 100, 128, 126);  
                           
                 
                              
