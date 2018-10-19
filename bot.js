@@ -2603,7 +2603,7 @@ client.on('message', message => {
  });
 client.on("message", message => {
   if (message.author.bot) return;
-fs.writeFile('./id/mozo.json', JSON.stringify(id), (err) => {
+fs.writeFile('./profile.json', JSON.stringify(id), (err) => {
 if (err) console.error(err);
 });
 });
