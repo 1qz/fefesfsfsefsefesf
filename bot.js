@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const jimp = require('jimp');
 const client = new Discord.Client();
-const id = JSON.parse(fs.readFileSync("./id/mozo.json", "utf8"));
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
