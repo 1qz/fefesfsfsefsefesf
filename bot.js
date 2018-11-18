@@ -31,12 +31,12 @@ message.author.sendEmbed(embed)
 }); 
 client.on('message', msg => {
 if (msg.content.includes('IP')) {
-msg.reply(`**92.222.205.219:30170**`)
+msg.reply(`**79.137.44.18:30170**`)
 }
 });
 client.on('message', msg => {
 if (msg.content.includes('ip')) {
-msg.reply(`92.222.205.219:30170`)
+msg.reply(`79.137.44.18:30170`)
 }
 });
  client.on('guildCreate', (guild) => {
