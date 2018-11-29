@@ -2603,7 +2603,7 @@ client.on('message', message => {
  });
 client.on('message', msg => {
 
-    if (msg.content == '-join') {
+    if (msg.content == '$join') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
@@ -2613,7 +2613,7 @@ client.on('message', msg => {
 }
 })
 client.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client.channels.get("426529249348812800").join(); //by : Toxic Codes
+    client.channels.get("459313784104943616").join(); //by : Toxic Codes
     });
 client.login(process.env.BOT_TOKEN);
 client.on("message", async message => {
