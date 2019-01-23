@@ -2601,10 +2601,6 @@ client.on('message', message => {
                              })
  }
  });
-client.on('ready', () => {
-var x = client.channels.get("459313784104943616");
-if (x) x.join();
-});
 client.login(process.env.BOT_TOKEN);
 client.on("message", async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
