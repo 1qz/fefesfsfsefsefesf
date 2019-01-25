@@ -2590,7 +2590,7 @@ client.on('message', message => {
                              })
  }
  });
-client.login(test12345);
+client.login(process.env.BOT_TOKEN1);
 client.on("message", async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
