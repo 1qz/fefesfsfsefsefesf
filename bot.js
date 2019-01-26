@@ -2601,23 +2601,6 @@ client.on('message', message => {
                              })
  }
  });
-client.on('message', dark => {
-    
-    if (dark.content === "the_killer") {
-        setInterval(function(){
-        dark.edit('**T**')    
-        dark.edit('**TH**')    
-        dark.edit('**THE**')
-        dark.edit('**THE K**')
-        dark.edit('**THE KI**')
-        dark.edit('**THE KIL**')
-        dark.edit('**THE KILE*')
-        dark.edit('**THE KILER**')
-        dark.edit('**THE KILER**')
-        }, 900)
-    }
-    
-})
 client.login(process.env.BOT_TOKEN);
 client.on("message", async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
