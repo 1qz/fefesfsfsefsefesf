@@ -1749,7 +1749,7 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
  
       });
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","مواطن"));
+    member.addRole(member.guild.roles.find("name","🧛 مواطن 🧛"));
     });
   client.on('guildMemberAdd', member => {
    if(member.presence.status === 'offline') {
