@@ -23,6 +23,9 @@ THE KILLER#4186
 
 ***
 `)
+  message.author.sendEmbed(embed)
+
+}
 });
  client.on('guildCreate', (guild) => {
     if(client.guilds.size > 50) {
