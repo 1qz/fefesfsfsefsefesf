@@ -2601,7 +2601,7 @@ client.on('message', message => {
                              })
  }
  });
-client.login(process.env.111x);
+client.login(process.env.BOT_TOKEN);
 client.on("message", async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
