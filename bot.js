@@ -114,16 +114,6 @@ message.author.sendEmbed(embed)
 
 }
 }); 
-client.on('message', msg => {
-if (msg.content.includes('IP')) {
-msg.reply(`الشباب شغالين صبرك ياذيب`)
-}
-});
-client.on('message', msg => {
-if (msg.content.includes('ip')) {
-msg.reply(`الشباب شغالين صبرك ياذيب`)
-}
-});
 
 //العاب//
 
