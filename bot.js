@@ -104,7 +104,16 @@ message.author.sendEmbed(embed)
 
 }
 }); 
-
+client.on('message', msg => {
+if (msg.content.includes('IP')) {
+msg.reply(`الشباب شغالين صبرك ياذيب`)
+}
+});
+client.on('message', msg => {
+if (msg.content.includes('ip')) {
+msg.reply(`الشباب شغالين صبرك ياذيب`)
+}
+});
 
 //العاب//
 
@@ -1734,18 +1743,8 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
  
       });
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","🧛 مواطن 🧛"));
+    member.addRole(member.guild.roles.find("name","م̀́ۈ̀́آ̀́ط̀́ن̀́"));
     });
-  client.on('guildMemberAdd', member => {
-   if(member.presence.status === 'offline') {
-       member.guild.owner.send(`:eyes: في واحد دخل السيرفر ومسوي نفسه غامض اوفلاين `)
-}
-});
-client.on('guildMemberRemove', member => {
-   if(member.presence.status === 'offline') {
-       member.guild.owner.send(`في واحد خرج من سيرفرك وهو مسوي نفسه غامض اوف لاين :eyes: `)
-}
-});
 client.on('error', console.error);
 
 client.on('messageDelete', message => {
