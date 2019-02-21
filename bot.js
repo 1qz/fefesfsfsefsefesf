@@ -31,12 +31,12 @@ message.author.sendEmbed(embed)
 });
 client.on('message', msg => {
 if (msg.content.includes('IP')) {
-msg.reply(`159.100.6.216:30121`)
+msg.reply(```145.239.150.207:30120```)
 }
 });
 client.on('message', msg => {
 if (msg.content.includes('ip')) {
-msg.reply(`159.100.6.216:30121`)
+msg.reply(```145.239.150.207:30120```)
 }
 });
  
