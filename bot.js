@@ -2078,4 +2078,5 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 }
 
 });
+var token = " ";
 client.login(process.env.BOT_TOKEN);
