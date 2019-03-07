@@ -2005,9 +2005,8 @@ client.on("message", (message) => {
 
   if (message.content.toLowerCase().startsWith(prefix + `vhelp`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: Vulnix Help`)
+    .setTitle(`:mailbox_with_mail: New Life - نيو لايف`)
     .setColor(0xCF40FA)
-    .setDescription(`اهلا:`)
     .addField(`Tickets`, `[${prefix}new]() > فتح تذكرة جديدة \n[${prefix}close]() > الغاء التذكرة`)
     message.channel.send({ embed: embed });
   }
