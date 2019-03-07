@@ -1235,7 +1235,7 @@ client.on('message', message => {
          }
  });
 client.on('ready', () => {
-  client.user.setGame('( -help )BOT BY THE KILLER',`https://servers.fivem.net/#/servers/detail/92.222.205.219:30120`);
+  client.user.setGame('( -help | -vhelp )BOT BY THE KILLER',`https://servers.fivem.net/#/servers/detail/92.222.205.219:30120`);
   console.log('XLoRD');
 });
 client.on('message', message => {
